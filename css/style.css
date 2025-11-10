@@ -1,66 +1,63 @@
+html.index, html.index body {
+    min-height: 100vh;
+}
+
 html.index {
     background-image: linear-gradient(to bottom right, lightcoral, lightgreen, lightblue, lightsalmon);
-    height: 100%;
+    background-attachment: fixed;
 }
-h1{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
     color: black;
-    margin-inline: 10px;
-    padding: 10px;
-    text-align: center;
+    margin: 0;
 }
-.odin-index {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    margin: 0.5rem auto;
+    padding: 0.625rem;
+    text-align: center;
 }
 .list {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: black;
-    margin-block: 10px;
-    padding: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
+    margin-block: 0.625rem;
+    padding: 0.625rem;
     border-radius: 20px;
-    display: block;
     background-color: rgba(0, 0, 0, 0.15);
 }
-#lasag {
+
+.list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
     margin-block: 10px;
+}
+
+/* Shared link styling */
+.list a {
+    display: block;
     padding: 10px;
     border-radius: 15px;
-    display: block;
-    background-color: lightcoral;
     text-align: center;
     color: white;
     text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-#ham {
-    margin-block: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    display: block;
-    background-color: lightgreen;
-    text-align: center;
-    color: white;
-    text-decoration: none;
+
+.list a:hover,
+.list a:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
-#chiknrice {
-    margin-block: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    display: block;
-    background-color: lightblue;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-#pasta {
-    margin-block: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    display: block;
-    background-color: lightsalmon;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
+
+/* Individual link colors */
+.lasag { background-color: lightcoral; }
+.ham { background-color: lightgreen; }
+.chiknrice { background-color: lightblue; }
+.pasta { background-color: lightsalmon; }
