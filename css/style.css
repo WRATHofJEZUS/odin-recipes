@@ -50,6 +50,7 @@ img {
     margin: 50px;
 }
 
+
 #lasag,
 #ham,
 #cnr,
@@ -70,6 +71,18 @@ img {
 }
 
 .info, .links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
     margin-left: auto;
     margin-right: auto;
 }
